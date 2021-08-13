@@ -1,0 +1,25 @@
+* c:\users\vivobook\desktop\esim\ldo_voltage_regilator\ldo_voltage_regilator.cir
+
+.include NMOS-180nm.lib
+.include PMOS-180nm.lib
+m3 vin vin gnd gnd CMOSN W=100u L=100u M=1
+m7 net-_m6-pad3_ vin gnd gnd CMOSN W=100u L=100u M=1
+m2 vin net-_m1-pad2_ net-_m2-pad3_ vin CMOSP W=100u L=100u M=1
+m6 vin net-_m2-pad3_ net-_m6-pad3_ vin CMOSP W=100u L=100u M=1
+m1 vin net-_m1-pad2_ net-_m1-pad2_ vin CMOSP W=100u L=100u M=1
+m8 vin net-_m6-pad3_ vout vin CMOSP W=100u L=100u M=1
+m5 net-_m4-pad3_ vin gnd gnd CMOSN W=100u L=100u M=1
+r1  net-_m9-pad2_ vout 60k
+r2  gnd net-_m9-pad2_ 100k
+c1  vout gnd 50pf
+m4 net-_m1-pad2_ ? net-_m4-pad3_ net-_m4-pad3_ CMOSN W=100u L=100u M=1
+m9 net-_m2-pad3_ net-_m9-pad2_ net-_m4-pad3_ net-_m4-pad3_ CMOSN W=100u L=100u M=1
+.ac lin 7 0Hz 1Meg
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end

@@ -1,0 +1,26 @@
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+xm3 vin vin gnd gnd sky130_fd_pr__nfet_01v8 W=.42u L=.5u
+xm7 net-_m6-pad3_ vin gnd gnd sky130_fd_pr__nfet_01v8 W=.42u L=.5u 
+xm2 vin net-_m1-pad2_ net-_m2-pad3_ vin sky130_fd_pr__pfet_01v8 W=3u L=0.5u 
+xm6 vin net-_m2-pad3_ net-_m6-pad3_ vin sky130_fd_pr__pfet_01v8 W=3u L=0.5u 
+xm1 vin net-_m1-pad2_ net-_m1-pad2_ vin sky130_fd_pr__pfet_01v8 W=3u L=0.5u 
+xm8 vin net-_m6-pad3_ vout vin sky130_fd_pr__pfet_01v8 W=3u L=0.5u 
+xm5 net-_m4-pad3_ vin gnd gnd sky130_fd_pr__nfet_01v8 W=.42u L=.5u 
+r1  net-_m9-pad2_ vout 60k
+r2  gnd net-_m9-pad2_ 100k
+c1  vout gnd 50pf
+v2  vref gnd 1.50v
+v1  vin gnd 2.55 v
+* u4  vref plot_v1
+xm4 net-_m1-pad2_ vref net-_m4-pad3_ net-_m4-pad3_ sky130_fd_pr__nfet_01v8 W=.42u L=.5u 
+xm9 net-_m2-pad3_ net-_m9-pad2_ net-_m4-pad3_ net-_m4-pad3_ sky130_fd_pr__nfet_01v8 W=.42u L=.5u 
+* u2  vout plot_v1
+* u1  vin plot_v1
+.tran 0 1 0
+
+* Control Statements 
+.control
+run
+plot v(vout)
+.endc
+.end

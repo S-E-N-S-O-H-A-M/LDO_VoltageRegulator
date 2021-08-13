@@ -1,0 +1,8 @@
+STATUS: PSpice Schematics to Capture translator (17.2.0.d001)
+STATUS:  
+STATUS: Translator started at Saturday, July 31, 2021 16:36:07
+STATUS: C:\Cadence\SPB_17.2\tools\bin\sch2cap -f "C:\Users\Vivobook\Desktop\Esim\LDO_Voltage_Regilator\LDO_Voltage_Regilator.sch" -o "C:\Users\Vivobook\Desktop\Esim\LDO_Voltage_Regilator\LDO_Voltage_Regilator.OPJ" -i .\cdssetup\OrCAD_PSpice/17.2.0/PSpice.ini -d 0000000000100ABC -h  -p  -c  -z 
+INFO(ORSCH-1029): Using existing library 'C:\Cadence\SPB_17.2\tools\Capture\Library\PSpice\modeled.etc'.
+INFO(ORSCH-1031): Created new library 'C:\Users\Vivobook\Desktop\Esim\LDO_Voltage_Regilator\LDO_Voltage_Regilator.olb'.
+STATUS: Translator stopped at Saturday, July 31, 2021 16:36:09
+STATUS: 0 Error messages, 0 Warning messages
