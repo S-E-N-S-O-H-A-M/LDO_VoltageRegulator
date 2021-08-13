@@ -1,4 +1,4 @@
-# LDO Voltage Regulator
+# LDO_Voltage_Regulator
 This repository presents the design of a LDO Voltage Regulator with 2.55V-3.55V input voltage and a 1.50V reference voltage using the sky130 technology.
 ## Table of Contents ##
 
@@ -57,5 +57,34 @@ The circuit without load of this schematic is as shown below:
 
 ![without_load](https://github.com/S-O-H-A-M/LDO_VoltageRegulator/blob/main/Pre%20Layout%20Simulations/screenshots/without_load_avsdvr_3v05.PNG)
 
+The PSSR of this schematic is as shown below:
+
+![PSSR](https://github.com/S-O-H-A-M/LDO_VoltageRegulator/blob/main/Pre%20Layout%20Simulations/screenshots/PSSR_avsdvr_3v05.PNG)
 
 
+# Observation
+
+
+
+# Steps to install the tools and execute the pre layout design
+## Steps to install eSim
+1. Install the eSim tool using this [website](https://esim.fossee.in/downloads). Note: You can also refer to the eSim [Spoken Tutorial](https://spoken-tutorial.org/tutorial-search/?search_foss=eSim).
+
+
+## Executing the prelayout design simulations
+
+
+## Executing the postlayout design simulations
+
+
+# Further Work
+
+Further work would be to obtain the simulatios of 9 bit DAC and 10 bit DAC and calculate INL and DNL for 10 bit DAC.
+
+# Contributors
+
+* Soham Sen , B.Tech (Electronics and Communication Engineering), Amity University Kolkata - sohamsen25420001@gmail.com
+
+# Acknowledgements
+
+ * Kunal Ghosh, Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd. - kunalghosh@gmail.com
