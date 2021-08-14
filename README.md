@@ -1,10 +1,10 @@
 # LDO_Voltage_Regulator
-This repository presents the design of a LDO Voltage Regulator with 2.55V-3.55V input voltage and a 1.50V reference voltage using the sky130 technology.
+This repository presents the design of a LDO Voltage Regulator with 2.55V-3.55V input voltage and a 1.50V reference voltage using the sky130 technology.The project is build using Open Source Tools like Magic, Sky130PDK and eSim.
 ## Table of Contents ##
 
 - [1. Introduction](#introduction)
 - [2. Pre Layout Simulations](#pre-layout-simulations)
-  * [ LDO Voltage Regulator](#LDO-Voltage-Regulator)
+  * [LDO Voltage Regulator](#LDO-Voltage-Regulator)
 - [3. Observation](#observation)
 - [4. Steps to install the tools and execute the pre layout design](#steps-to-install-the-tools-and-execute-the-pre-layout-design) 
 - [5. Layout](#layout)
