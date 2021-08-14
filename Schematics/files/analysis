@@ -1,1 +1,1 @@
-.ac lin 7 0Hz 1Meg
+.tran 0e-00 100e-09 0e-09

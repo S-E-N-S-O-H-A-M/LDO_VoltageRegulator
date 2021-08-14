@@ -1,6 +1,6 @@
 * C:\Users\Vivobook\Desktop\Esim\LDO_Voltage_Regilator\LDO_Voltage_Regilator.cir
 
-* EESchema Netlist Version 1.1 (Spice format) creation date: 08/13/21 22:30:11
+* EESchema Netlist Version 1.1 (Spice format) creation date: 08/14/21 10:01:02
 
 * To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
 * To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
@@ -16,7 +16,13 @@ M5  Net-_M4-Pad3_ VIN GND GND eSim_MOS_N
 R1  Net-_M9-Pad2_ VOUT 60k		
 R2  GND Net-_M9-Pad2_ 100k		
 C1  VOUT GND 50pF		
-M4  Net-_M1-Pad2_ ? Net-_M4-Pad3_ Net-_M4-Pad3_ eSim_MOS_N		
+v2  VREF GND 1.50V		
+U4  VREF plot_v1		
+M4  Net-_M1-Pad2_ VREF Net-_M4-Pad3_ Net-_M4-Pad3_ eSim_MOS_N		
 M9  Net-_M2-Pad3_ Net-_M9-Pad2_ Net-_M4-Pad3_ Net-_M4-Pad3_ eSim_MOS_N		
+U2  VOUT plot_v1		
+U1  VIN plot_v1		
+R3  VOUT GND 10k		
+v1  VIN GND 2.55V		
 
 .end

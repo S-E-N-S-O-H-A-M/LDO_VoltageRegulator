@@ -408,26 +408,24 @@ Wire Wire Line
 Wire Wire Line
 	7750 3900 8900 3900
 Connection ~ 8600 3900
+Wire Wire Line
+	8000 2750 2000 2750
+Connection ~ 2150 2750
+Text GLabel 2650 3550 0    60   Input ~ 0
+VREF
+Wire Wire Line
+	2150 2750 2150 3900
+Wire Wire Line
+	2150 4800 8600 4800
 $Comp
-L eSim_AC v3
-U 1 1 6108EB30
+L DC v1
+U 1 1 6117479A
 P 2150 4350
-F 0 "v3" H 1950 4450 60  0000 C CNN
-F 1 "3.55V" H 1950 4300 60  0000 C CNN
+F 0 "v1" H 1950 4450 60  0000 C CNN
+F 1 "2.55V" H 1950 4300 60  0000 C CNN
 F 2 "R1" H 1850 4350 60  0000 C CNN
 F 3 "" H 2150 4350 60  0000 C CNN
 	1    2150 4350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 2750 2150 2750
-Connection ~ 2150 2750
-Text GLabel 2650 3550 0    60   Input ~ 0
-VREF
-Wire Wire Line
-	2150 3900 2150 2750
-Wire Wire Line
-	2150 2750 8000 2750
-Wire Wire Line
-	2150 4800 8600 4800
 $EndSCHEMATC

@@ -173,17 +173,6 @@ F 3 "" H 2750 4300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DC v1
-U 1 1 61051057
-P 1950 4300
-F 0 "v1" H 1750 4400 60  0000 C CNN
-F 1 "3.55 V" H 1750 4250 60  0000 C CNN
-F 2 "R1" H 1650 4300 60  0000 C CNN
-F 3 "" H 1950 4300 60  0000 C CNN
-	1    1950 4300
-	1    0    0    -1  
-$EndComp
-$Comp
 L plot_v1 U4
 U 1 1 61051A68
 P 2750 3750
@@ -205,8 +194,6 @@ F 3 "" H 6050 4900 50  0001 C CNN
 	1    6050 4900
 	1    0    0    -1  
 $EndComp
-Text GLabel 2650 3550 0    60   Input ~ 0
-VREF
 $Comp
 L eSim_MOS_N M4
 U 1 1 610544CE
@@ -347,8 +334,6 @@ Wire Wire Line
 	6050 4800 6050 4900
 Connection ~ 6050 4800
 Wire Wire Line
-	1950 4750 1950 4800
-Wire Wire Line
 	2750 4750 2750 4800
 Connection ~ 2750 3550
 Wire Wire Line
@@ -378,8 +363,6 @@ Wire Wire Line
 Wire Wire Line
 	8000 3850 8000 2750
 Connection ~ 7750 2750
-Wire Wire Line
-	1250 4800 8600 4800
 $Comp
 L plot_v1 U2
 U 1 1 6108CFEC
@@ -394,15 +377,15 @@ $EndComp
 $Comp
 L plot_v1 U1
 U 1 1 6108D0F2
-P 2150 2750
-F 0 "U1" H 2150 3250 60  0000 C CNN
-F 1 "plot_v1" H 2350 3100 60  0000 C CNN
-F 2 "" H 2150 2750 60  0000 C CNN
-F 3 "" H 2150 2750 60  0000 C CNN
-	1    2150 2750
+P 2150 2950
+F 0 "U1" H 2150 3450 60  0000 C CNN
+F 1 "plot_v1" H 2350 3300 60  0000 C CNN
+F 2 "" H 2150 2950 60  0000 C CNN
+F 3 "" H 2150 2950 60  0000 C CNN
+	1    2150 2950
 	1    0    0    -1  
 $EndComp
-Text GLabel 2000 2650 0    60   Input ~ 0
+Text GLabel 2000 2750 0    60   Input ~ 0
 VIN
 Text GLabel 8900 3900 2    60   Input ~ 0
 VOUT
@@ -425,69 +408,24 @@ Wire Wire Line
 Wire Wire Line
 	7750 3900 8900 3900
 Connection ~ 8600 3900
-$Comp
-L eSim_C C2
-U 1 1 6108E7E0
-P 2150 3450
-F 0 "C2" H 2175 3550 50  0000 L CNN
-F 1 "1uF" H 2175 3350 50  0000 L CNN
-F 2 "" H 2188 3300 30  0000 C CNN
-F 3 "" H 2150 3450 60  0000 C CNN
-	1    2150 3450
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	8000 2750 2000 2750
 Connection ~ 2150 2750
+Text GLabel 2650 3550 0    60   Input ~ 0
+VREF
 Wire Wire Line
-	2150 3600 2150 4800
-Connection ~ 2150 4800
+	2150 2750 2150 3900
+Wire Wire Line
+	2150 4800 8600 4800
 $Comp
-L eSim_AC v?
-U 1 1 6108EB30
-P 1250 4350
-F 0 "v?" H 1050 4450 60  0000 C CNN
-F 1 "3.55V" H 1050 4300 60  0000 C CNN
-F 2 "R1" H 950 4350 60  0000 C CNN
-F 3 "" H 1250 4350 60  0000 C CNN
-	1    1250 4350
+L DC v1
+U 1 1 6117479A
+P 2150 4350
+F 0 "v1" H 1950 4450 60  0000 C CNN
+F 1 "DC" H 1950 4300 60  0000 C CNN
+F 2 "R1" H 1850 4350 60  0000 C CNN
+F 3 "" H 2150 4350 60  0000 C CNN
+	1    2150 4350
 	1    0    0    -1  
 $EndComp
-$Comp
-L eSim_L L?
-U 1 1 6108EB8F
-P 1800 5300
-F 0 "L?" H 3750 5800 50  0000 C CNN
-F 1 "1H" H 3750 5950 50  0000 C CNN
-F 2 "" V 3750 5850 60  0000 C CNN
-F 3 "" V 3750 5850 60  0000 C CNN
-	1    1800 5300
-	0    -1   -1   0   
-$EndComp
-Connection ~ 1950 4800
-Wire Wire Line
-	1250 3900 1250 3650
-Wire Wire Line
-	1250 3050 1250 2750
-Wire Wire Line
-	1250 2750 8000 2750
-Connection ~ 1950 2750
-Wire Wire Line
-	2150 2550 2150 3300
-$Comp
-L eSim_C C?
-U 1 1 6108F6BA
-P 1950 3450
-F 0 "C?" H 1975 3550 50  0000 L CNN
-F 1 "1uF" H 1975 3350 50  0000 L CNN
-F 2 "" H 1988 3300 30  0000 C CNN
-F 3 "" H 1950 3450 60  0000 C CNN
-	1    1950 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1950 3300 1950 2750
-Wire Wire Line
-	1950 3600 1950 3850
-Wire Wire Line
-	2000 2650 2150 2650
-Connection ~ 2150 2650
 $EndSCHEMATC
