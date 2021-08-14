@@ -79,7 +79,6 @@ The PSSR of this schematic is as shown below:
 
 # Further Work
 
-Further work would be to obtain the simulatios of 9 bit DAC and 10 bit DAC and calculate INL and DNL for 10 bit DAC.
 
 # Contributors
 
